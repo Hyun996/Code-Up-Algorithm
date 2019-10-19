@@ -3,11 +3,13 @@
 int main()
 {
     int n = 0, m = 0;
-a:
-    scanf("%d", &a);
-    if(a != 0){
-        printf("%d\n", a);
-        goto a;
+    scanf("%d", &n); 
+reget:
+    scanf("%d", &m); 
+    printf("%d\n", m);    
+    n--;
+    if(n != 0){
+        goto reget;
     }
     return 0;
 }
